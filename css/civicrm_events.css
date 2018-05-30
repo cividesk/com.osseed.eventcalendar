@@ -2,8 +2,18 @@
  color:#000;
 }
 
+.fc-title {
+ color:#000;
+}
+
+.fc-content {
+  white-space: initial !important;
+  overflow: hidden !important;
+  padding: 5px;
+}
+
 .event-info-details a{
-	border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   display: block;
   padding-left: 1px;
 }
