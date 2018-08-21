@@ -151,3 +151,19 @@ _eventcalendar_civix_insert_navigation_menu($menu, NULL, array(
 ));
 _eventcalendar_civix_navigationMenu($menu);
 } // */
+
+
+function eventcalendar_civicrm_navigationMenu( &$params ) {
+  // Add menu entry for extension administration page
+  _eventcalendar_civix_insert_navigation_menu($params, 'Events', array(
+    'name'       => 'Show Events Calendar',
+    'url'        => 'civicrm/showevents',
+    'permission' => 'view event info',
+  ));
+
+  _eventcalendar_civix_insert_navigation_menu($params, 'Administer/CiviEvent', array(
+    'name'       => 'Event Calendar Settings',
+    'url'        => 'civicrm/eventcalendarsettings',
+    'permission' => 'view event info',
+  ));
+}
